@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <script>
+        let marks = parseInt(prompt("Enter your marks:"));
+        let grade;
+        let message;
+
+        switch (true) {
+            case (marks >= 90 && marks <= 100):
+                grade = "A";
+                message = "Excellent!";
+                break;
+            case (marks >= 75 && marks <= 89):
+                grade = "B";
+                message = "Great job!";
+                break;
+            case (marks >= 60 && marks <= 74):
+                grade = "C";
+                message = "Good effort.";
+                break;
+            case (marks >= 40 && marks <= 59):
+                grade = "D";
+                message = "You passed.";
+                break;
+            case (marks >= 0 && marks <= 39):
+                grade = "F";
+                message = "Better luck next time.";
+                break;
+            default:
+                grade = "-";
+                message = "Invalid marks!";
+        }
+
+        alert( message);
+        console.log(grade);
+    </script>
+</body>
+</html>
